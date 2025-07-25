@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "nombre": "Consola",
+    "precio": 1200000,
+    "imagen": "./img/ps5.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Juego",
+    "precio": 80000,
+    "imagen": "./img/god.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "VR ",
+    "precio": 900000,
+    "imagen": "./img/vr.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Joystick",
+    "precio": 140000,
+    "imagen": "./img/joy.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Base de carga ",
+    "precio": 54000,
+    "imagen": "./img/baseCarga.jpg"
+  },
+  {
+    "id": 6,
+    "nombre": "Auriculares",
+    "precio": 206000,
+    "imagen": "./img/auriculares.jpg"
+  }
+]
+

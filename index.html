@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carrito de Compras</title>
+  <link rel="stylesheet" href="./css/estilo.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="./js/app.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1 class="neon">Tienda Interactiva</h1>
+    <section id="productos"></section>
+
+    <h2>Carrito</h2>
+    <section id="carrito"></section>
+    <p id="totalCarrito">Total: $0</p>
+    <button id="mostrarFormulario"class="btn btn-primary" type="submit">Finalizar Compra</button>
+    <form id="formularioCompra" style="display:none;">
+      <h3>Datos del comprador</h3>
+
+      <label>Método de envío:</label><br/>
+      <select id="envio">
+        <option value="retiro">Retiro en local</option>
+        <option value="domicilio">Envío a domicilio</option>
+      </select><br/>
+
+      <div id="direccionGrupo" style="display:none;">
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" value="Calle Falsa 123"><br/>
+      </div>
+
+      <p id="infoLocal" style="display:none;">Retiro en: Av. Siempre Viva 742</p>
+
+      <label>Nombre:</label>
+      <input type="text" id="nombre" value="Emanuel"><br/>
+
+      <label>Apellido:</label>
+      <input type="text" id="apellido" value="Fernández"><br/>
+
+      <label>Teléfono:</label>
+      <input type="tel" id="telefono" value="1122334455"><br/>
+
+      <label>Email:</label>
+      <input type="email" id="email" value="dario@email.com"><br/>
+
+      <label>N° de tarjeta:</label>
+      <input type="text" id="tarjeta" value="4111111111111111"><br/>
+      <div id="mensajeError"></div>
+
+      <button class="btn btn-primary" type="submit">Confirmar Compra</button>
+      <button  id="cancelarCompra" class="btn btn-primary" type="button">Cancelar compra</button>
+
+    </form>
+  </main>
+
+  
+</body>
+</html>
